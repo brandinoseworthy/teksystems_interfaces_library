@@ -1,12 +1,12 @@
 public class AdultUsers extends LibrayUserAccounts implements LibraryUserI {
 
- // constructors
+    // constructors
 
    public AdultUsers(int age, String bookType){
        super(age, bookType);
    }
 
-// methods
+    // methods
 
     @Override
     public String registerAccount() {
@@ -26,4 +26,5 @@ public class AdultUsers extends LibrayUserAccounts implements LibraryUserI {
         else
             return  "Oops... you are only allowed to request adult Fiction books.";
     }
+
 } // end class

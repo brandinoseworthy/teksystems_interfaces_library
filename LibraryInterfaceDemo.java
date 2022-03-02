@@ -2,8 +2,6 @@ import java.sql.SQLOutput;
 
 public class LibraryInterfaceDemo {
 
-
-
     public static void main(String[] args) {
 
         KidUsers Damon = new KidUsers(10, "Kids");
@@ -32,16 +30,6 @@ public class LibraryInterfaceDemo {
         System.out.printf("Jerrell's book request message is: %s\n", Jerrell.requestBook());
 
 
-
-
-
-
-
-
-
-
-
     } // end method
-
 
 } // end class

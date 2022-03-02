@@ -1,6 +1,5 @@
 public class KidUsers extends LibrayUserAccounts implements LibraryUserI{
 
-
     // constructor
 
     public KidUsers (int age, String bookType){
