@@ -4,30 +4,44 @@ public class LibraryInterfaceDemo {
 
     public static void main(String[] args) {
 
-        KidUsers Damon = new KidUsers(10, "Kids");
-        KidUsers Kai = new KidUsers(18, "Fiction");
+        KidUsers kid1 = new KidUsers("Damon", 10, "Kids");
+        KidUsers kid2 = new KidUsers("Kai", 18, "Fiction");
 
-        System.out.printf("Damon's registration message is: %s\n", Damon.registerAccount());
-        System.out.printf("Damon's book request message is: %s\n", Damon.requestBook());
+        kid1.registerAccount2();
+        kid1.requestBook2();
+        System.out.println("---");
+        kid2.registerAccount2();
+        kid2.requestBook2();
+        System.out.println("---");
 
-        System.out.println("-------------------------------------");
 
-        System.out.printf("Kai's registration message is: %s\n", Kai.registerAccount());
-        System.out.printf("Kai's book request message is: %s\n", Kai.requestBook());
+//        System.out.printf("%s registration message is: %s\n", kid1.name, kid1.registerAccount());
+//        System.out.printf("%s book request message is: %s\n", kid1.name, kid1.requestBook());
 
-        System.out.println("-------------------------------------");
-        System.out.println("--------------------------------------");
+//        System.out.println("-------------------------------------");
+//
+////        System.out.printf("%s registration message is: %s\n", kid2.name, kid2.registerAccount());
+////        System.out.printf("%s book request message is: %s\n", kid2.name, kid2.requestBook());
+//
+//        System.out.println("-------------------------------------");
+//        System.out.println("--------------------------------------");
 
-        AdultUsers Kory = new AdultUsers(5, "Kids");
-        AdultUsers Jerrell = new AdultUsers(23, "Fiction");
+        AdultUsers adult1 = new AdultUsers("Kory",5, "Kids");
+        AdultUsers adult2 = new AdultUsers("Jerrell",23, "Fiction");
 
-        System.out.printf("Kory's registration message is: %s\n", Kory.registerAccount());
-        System.out.printf("Kory's book request message is: %s\n", Kory.requestBook());
+        adult1.registerAccount2();
+        adult1.requestBook2();
+        System.out.println("---");
+        adult2.registerAccount2();
+        adult2.requestBook2();
 
-        System.out.println("--------------------------------------");
+//        System.out.printf("%s registration message is: %s\n", adult1.name, adult1.registerAccount());
+//        System.out.printf("%s book request message is: %s\n", adult1.name, adult1.requestBook());
 
-        System.out.printf("Jerrell's registration message is: %s\n", Jerrell.registerAccount());
-        System.out.printf("Jerrell's book request message is: %s\n", Jerrell.requestBook());
+//        System.out.println("--------------------------------------");
+
+//        System.out.printf("%s registration message is: %s\n", adult2.name, adult2.registerAccount());
+//        System.out.printf("%s book request message is: %s\n", adult2.name, adult2.requestBook());
 
 
     } // end method

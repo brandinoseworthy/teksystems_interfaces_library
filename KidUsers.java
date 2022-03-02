@@ -2,8 +2,8 @@ public class KidUsers extends LibrayUserAccounts implements LibraryUserI{
 
     // constructor
 
-    public KidUsers (int age, String bookType){
-        super(age, bookType);
+    public KidUsers (String name, int age, String bookType){
+        super(name, age, bookType);
     }
 
     // methods
@@ -24,4 +24,25 @@ public class KidUsers extends LibrayUserAccounts implements LibraryUserI{
         else
             return  "Oops... you are only allowed to request kids books.";
     }
+
+    @Override
+    public void registerAccount2() {
+        if(age < 12){
+            System.out.println("You have successfully registered under a Kids Account."); }
+        if(age > 12) {
+            System.out.println("Sorry, Age must be less than 12 to register as a kid");
+            }
+
+    }
+
+    @Override
+    public void requestBook2() {
+        if (bookType.equals("Kids"))
+            System.out.println("Book Issued successfully, please return the book within 10 days.");
+        else
+            System.out.println("Oops... you are only allowed to request kids books.");
+
+    }
+
+
 } // end class
